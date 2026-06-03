@@ -20,20 +20,55 @@
   }
 
   /* Cookie banner (essential vs. non-essential) */
-  var STORE = "calcreno-consent";
+  var STORE = "calcreno-cookie-consent";
+
+  function hideBanner(banner) {
+    // Hide effectively: the .cookie-banner author rule (display:flex) overrides
+    // the [hidden] attribute, so we also force display:none inline.
+    banner.hidden = true;
+    banner.style.display = "none";
+  }
+
+  function readConsent() {
+    try {
+      var raw = localStorage.getItem(STORE);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveConsent(status) {
+    try {
+      localStorage.setItem(STORE, JSON.stringify({ status: status, date: new Date().toISOString() }));
+    } catch (e) {}
+  }
+
   function initCookies() {
     var banner = document.querySelector("[data-cookie-banner]");
     if (!banner) return;
-    var saved;
-    try { saved = localStorage.getItem(STORE); } catch (e) { saved = "accept"; }
-    if (!saved) {
-      banner.hidden = false;
+
+    var consent = readConsent();
+    if (consent && consent.status) {
+      // Already decided in a previous visit — never show the banner again.
+      hideBanner(banner);
+      return;
     }
+
+    // First visit: show the banner.
+    banner.hidden = false;
+    banner.style.display = "";
+
     banner.addEventListener("click", function (e) {
       var action = e.target.getAttribute("data-cookie-action");
-      if (!action) return;
-      try { localStorage.setItem(STORE, action); } catch (err) {}
-      banner.hidden = true;
+      if (action !== "accept" && action !== "reject") return;
+      var status = action === "accept" ? "accepted" : "rejected";
+      saveConsent(status);
+      hideBanner(banner);
+      // Accept enables the optional analytics/ad-measurement layer; reject leaves
+      // only essential cookies. (No conditional analytics script is loaded today;
+      // AdSense's loader is static per site policy. The stored choice is available
+      // for any future gated measurement to read.)
     });
   }
 
