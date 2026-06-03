@@ -1,0 +1,7 @@
+node_modules/
+build/
+.DS_Store
+.claude/
+# internal audit artifacts (not part of the deployed site)
+calcreno-audit-report.md
+calcreno-final-audit.md

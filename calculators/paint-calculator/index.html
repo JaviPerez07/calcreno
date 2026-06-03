@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Calculator: How Many Gallons Do I Need? | CalcReno</title>
+    <meta name="description" content="Free paint calculator for U.S. rooms. Enter room size in feet, doors, windows, and coats to estimate gallons of paint and approximate cost in dollars.">
+    <link rel="canonical" href="https://calcreno.com/calculators/paint-calculator/">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
+    <link rel="mask-icon" href="../../assets/icons/favicon.svg" color="#17120b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&display=swap">
+    <link rel="stylesheet" href="../../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3733223915347669" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Paint Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (web browser)",
+  "url": "https://calcreno.com/calculators/paint-calculator/",
+  "description": "Free paint calculator for U.S. rooms. Enter room size in feet, doors, windows, and coats to estimate gallons of paint and approximate cost in dollars.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcReno",
+    "url": "https://calcreno.com"
+  }
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://calcreno.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://calcreno.com/calculators/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Paint Calculator",
+      "item": "https://calcreno.com/calculators/paint-calculator/"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many square feet does a gallon of paint cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One gallon of interior wall paint typically covers about 350–400 square feet in a single coat on a smooth, primed surface. CalcReno uses 350 sq ft per gallon as a conservative default so you are less likely to run short. Rough or porous surfaces (new drywall, textured walls, bare wood) absorb more and can drop coverage toward 250–300 sq ft per gallon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need one coat or two?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most repaints need two coats for an even, durable finish — especially when changing colors, going from dark to light, or painting over patches. A single coat may be enough only when refreshing the exact same color on a clean, previously painted wall. When in doubt, plan for two coats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I subtract doors and windows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CalcReno subtracts a standard interior door at about 21 sq ft (3 ft × 7 ft) and a standard window at about 15 sq ft (3 ft × 5 ft). This keeps your estimate realistic so you do not badly over-buy, while still leaving a small buffer for touch-ups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this include the ceiling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can choose to include the ceiling. When enabled, CalcReno adds the floor area (length × width) to the paintable surface. Ceilings are usually painted with flat ceiling paint, so if you are buying a separate ceiling product, calculate it on its own."
+      }
+    }
+  ]
+}
+</script>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="CalcReno">
+    <meta property="og:title" content="Paint Calculator: How Many Gallons Do I Need? | CalcReno">
+    <meta property="og:description" content="Free paint calculator for U.S. rooms. Enter room size in feet, doors, windows, and coats to estimate gallons of paint and approximate cost in dollars.">
+    <meta property="og:url" content="https://calcreno.com/calculators/paint-calculator/">
+    <meta property="og:image" content="https://calcreno.com/assets/img/hero-home.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Paint Calculator: How Many Gallons Do I Need? | CalcReno">
+    <meta name="twitter:description" content="Free paint calculator for U.S. rooms. Enter room size in feet, doors, windows, and coats to estimate gallons of paint and approximate cost in dollars.">
+    <meta name="twitter:image" content="https://calcreno.com/assets/img/hero-home.jpg">
+    <meta name="theme-color" content="#17120b">
+    <script src="../../main.js" defer></script>
+    <script src="../../calc.js" defer></script>
+  </head>
+  <body data-page-type="calculator">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="brand" href="../../" aria-label="CalcReno home">
+          <img src="../../assets/icons/logo.svg" alt="" width="34" height="34" aria-hidden="true">
+          <span class="brand__name">Calc<strong>Reno</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="../">Calculators</a>
+          <a href="./" aria-current="page">Paint</a>
+          <a href="../tile-flooring-calculator/">Tile &amp; Flooring</a>
+          <a href="../renovation-cost-estimator/">Renovation Cost</a>
+          <a href="../../guides/">Guides</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Calculators</a></li><li aria-current="page">Paint Calculator</li></ol></nav></div>
+      
+      <article class="wrap article calc-article">
+        <header class="article__head">
+          <span class="eyebrow">Calculator</span>
+          <h1>Paint Calculator</h1>
+          <p class="lede">Enter your room dimensions in feet, subtract doors and windows, and get an instant estimate of how many gallons of paint you need — plus a rough cost.</p>
+          <div class="byline">
+          <span class="byline__avatar" aria-hidden="true">CR</span>
+          <p class="byline__text"><strong>CalcReno Editorial Team</strong><br>
+          <small>Reviewed 2026-06-01 · <a href="../../how-we-research/">How we research</a></small></p>
+        </div>
+        </header>
+        <aside class="guide-callout">
+          <span class="guide-callout__icon" aria-hidden="true">📖</span>
+          <div class="guide-callout__text">
+            <strong>Read the full guide:</strong> <a href="../../guides/cost-to-paint-a-room/">How Much Does It Cost to Paint a Room in 2026?</a>
+            <span>DIY vs. hiring a pro, and how to budget the whole job.</span>
+          </div>
+          <a class="btn btn--ghost" href="../../guides/cost-to-paint-a-room/">Read guide &rarr;</a>
+        </aside>
+        
+        <p>This calculator estimates how many <strong>gallons of paint</strong> you need for a room and gives you a rough dollar cost. Everything is in U.S. units — <strong>feet, inches, gallons, and dollars</strong>. Measure the length and width of the room, the wall height (8 ft is standard for most U.S. homes), and count the doors and windows you will not be painting.</p>
+        <div class="calc-layout">
+        <form class="calc card" data-calc="paint" id="paint-form" novalidate data-related-href="../wallpaper-calculator/" data-related-label="Wallpaper Calculator" data-guide-href="../../guides/cost-to-paint-a-room/" data-guide-label="Cost to Paint a Room">
+          <div class="field">
+            <label for="paint-length">Room length</label>
+            <div class="field__control">
+              <input type="number" id="paint-length" name="paint-length" inputmode="decimal" value="12" min="1" step="0.5" required>
+              <span class="field__suffix">ft</span>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="paint-width">Room width</label>
+            <div class="field__control">
+              <input type="number" id="paint-width" name="paint-width" inputmode="decimal" value="12" min="1" step="0.5" required>
+              <span class="field__suffix">ft</span>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="paint-height">Wall height</label>
+            <div class="field__control">
+              <input type="number" id="paint-height" name="paint-height" inputmode="decimal" value="8" min="6" step="0.5" required>
+              <span class="field__suffix">ft</span>
+            </div>
+            <p class="field__help">Standard U.S. ceiling is 8 ft; many newer homes are 9 ft.</p>
+          </div>
+          <div class="field">
+            <label for="paint-doors">Doors</label>
+            <div class="field__control">
+              <input type="number" id="paint-doors" name="paint-doors" inputmode="decimal" value="1" min="0" step="1" required>
+              
+            </div>
+            <p class="field__help">Counted at 21 sq ft each (3 × 7 ft).</p>
+          </div>
+          <div class="field">
+            <label for="paint-windows">Windows</label>
+            <div class="field__control">
+              <input type="number" id="paint-windows" name="paint-windows" inputmode="decimal" value="2" min="0" step="1" required>
+              
+            </div>
+            <p class="field__help">Counted at 15 sq ft each (3 × 5 ft).</p>
+          </div>
+          <div class="field">
+            <label for="paint-coats">Number of coats</label>
+            <div class="field__control">
+              <input type="number" id="paint-coats" name="paint-coats" inputmode="decimal" value="2" min="1" step="1" required>
+              
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="paint-ceiling">Include ceiling?</label>
+            <div class="field__control">
+              <select id="paint-ceiling" name="paint-ceiling">
+                <option value="no" selected>No — walls only</option>
+                <option value="yes">Yes — add the ceiling</option>
+              </select>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="paint-price">Price per gallon</label>
+            <div class="field__control">
+              <input type="number" id="paint-price" name="paint-price" inputmode="decimal" value="35" min="0" step="1" required>
+              <span class="field__suffix">$</span>
+            </div>
+            <p class="field__help">Typical interior paint runs about $25–$60 a gallon.</p>
+          </div>
+          <div class="calc__actions">
+            <button type="submit" class="btn btn--primary btn--block">Calculate</button>
+            <button type="reset" class="btn btn--ghost">Reset</button>
+          </div>
+        </form>
+        <div class="calc-result card" id="paint-result" data-empty="true" aria-live="polite">
+          <div class="calc-result__placeholder">
+            <p>Fill in the room details and press Calculate to see gallons of paint and an estimated cost.</p>
+          </div>
+        </div>
+      </div>
+        <div class="ad-slot ad-slot--in-article" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+          style="display:block;text-align:center"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3733223915347669"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+        <div class="prose">
+          <h2>How the paint calculator works</h2>
+          <p>The math is simple, and it helps to see it so you can sanity-check the result:</p>
+          <ol>
+            <li><strong>Wall area</strong> = 2 × (length + width) × wall height. For a 12 × 12 ft room with 8 ft walls that is 2 × 24 × 8 = <strong>384 sq ft</strong>.</li>
+            <li><strong>Subtract openings</strong> you are not painting: 21 sq ft per door, 15 sq ft per window.</li>
+            <li><strong>Multiply by coats</strong>, then divide by <strong>350 sq ft per gallon</strong>.</li>
+            <li><strong>Round up</strong> to the next whole or half gallon, because you cannot buy a partial can and you want a little left over for touch-ups.</li>
+          </ol>
+          <h2>Tips for a more accurate estimate</h2>
+          <ul>
+            <li><strong>New drywall and bare wood drink paint.</strong> Prime first, or expect coverage closer to 250–300 sq ft per gallon.</li>
+            <li><strong>Dark-to-light color changes</strong> almost always need two coats, sometimes three.</li>
+            <li><strong>Buy trim and ceiling paint separately</strong> — they use different finishes (semi-gloss for trim, flat for ceilings).</li>
+            <li><strong>Keep the lot number.</strong> If you have to return for more, matching the same batch avoids subtle color shifts.</li>
+          </ul>
+          <p>Want a deeper walkthrough with room-by-room examples? Read our guide on <a href="/guides/how-much-paint-do-i-need/">how much paint you need</a>, or grab the right gear with our <a href="/guides/essential-diy-painting-tools/">essential painting tools list</a>.</p>
+        </div>
+        <section class="prose calc-extra">
+          <h2>Paint costs in 2026</h2>
+          <p>What you'll spend depends mostly on DIY vs. hiring out and the paint tier you choose. Here's where the money goes:</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Cost item</th><th>What it covers</th></tr></thead>
+              <tbody><tr><td>Wall paint</td><td>~2 gallons for a standard room, 2 coats</td></tr><tr><td>Primer</td><td>New drywall, bare wood, or big color changes</td></tr><tr><td>Trim &amp; ceiling paint</td><td>Bought separately — different finishes</td></tr><tr><td>Supplies / tools</td><td>Roller, brush, tray, tape, drop cloth (one-time)</td></tr><tr><td>Pro labor (if hiring)</td><td>Usually the largest part of a painter's quote</td></tr></tbody>
+            </table>
+          </div>
+          <p class="note">Paint and labor prices vary by brand and region — these are planning factors, not a quote.</p>
+        </section>
+        <section class="prose calc-extra">
+          <h2>Common mistakes to avoid</h2>
+          <ul class="mistakes"><li>Skipping primer on new drywall or patches, which kills coverage and shows through.</li><li>Not measuring first — you end up over-buying or running short mid-wall.</li><li>Forgetting that trim and ceilings use different paint, bought separately.</li><li>Trying to cover dark-to-light in a single coat; plan for two.</li><li>Skimping on tape and prep, then losing the time back on touch-ups.</li></ul>
+        </section>
+        <section class="related">
+          <h2>Keep going</h2>
+          <div class="related__links">
+            <a href="../../guides/cost-to-paint-a-room/">Cost to Paint a Room (2026) &rarr;</a>
+            <a href="../../guides/how-much-paint-do-i-need/">How Much Paint Do I Need? &rarr;</a>
+            <a href="../../guides/essential-diy-painting-tools/">Essential DIY Painting Tools &rarr;</a>
+          </div>
+        </section>
+      </article>
+      <section class="faq panel" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>How many square feet does a gallon of paint cover?</summary>
+            <div class="faq__answer"><p>One gallon of interior wall paint typically covers about <strong>350–400 square feet</strong> in a single coat on a smooth, primed surface. CalcReno uses 350 sq ft per gallon as a conservative default so you are less likely to run short. Rough or porous surfaces (new drywall, textured walls, bare wood) absorb more and can drop coverage toward 250–300 sq ft per gallon.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Do I need one coat or two?</summary>
+            <div class="faq__answer"><p>Most repaints need <strong>two coats</strong> for an even, durable finish — especially when changing colors, going from dark to light, or painting over patches. A single coat may be enough only when refreshing the exact same color on a clean, previously painted wall. When in doubt, plan for two coats.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Should I subtract doors and windows?</summary>
+            <div class="faq__answer"><p>Yes. CalcReno subtracts a standard interior door at about <strong>21 sq ft</strong> (3 ft × 7 ft) and a standard window at about <strong>15 sq ft</strong> (3 ft × 5 ft). This keeps your estimate realistic so you do not badly over-buy, while still leaving a small buffer for touch-ups.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Does this include the ceiling?</summary>
+            <div class="faq__answer"><p>You can choose to include the ceiling. When enabled, CalcReno adds the floor area (length × width) to the paintable surface. Ceilings are usually painted with flat ceiling paint, so if you are buying a separate ceiling product, calculate it on its own.</p></div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <section class="footer-about">
+          <a class="brand brand--footer" href="../../">
+            <img src="../../assets/icons/logo.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="brand__name">Calc<strong>Reno</strong></span>
+          </a>
+          <p>CalcReno gives U.S. homeowners free, easy-to-use calculators for paint, tile, flooring, concrete, wallpaper, and full room renovation costs — all in feet, inches, gallons, and dollars.</p>
+          <p class="footer-disclaimer">CalcReno publishes free calculators and educational content for informational purposes only. All results are estimates to help you plan a project; they are not professional quotes. Always confirm quantities and costs with a licensed contractor or supplier before buying materials.</p>
+        </section>
+        <section>
+          <h2>Calculators</h2>
+          <ul><li><a href="./">Paint Calculator</a></li><li><a href="../tile-flooring-calculator/">Tile &amp; Flooring Calculator</a></li><li><a href="../concrete-calculator/">Concrete Calculator</a></li><li><a href="../wallpaper-calculator/">Wallpaper Calculator</a></li><li><a href="../renovation-cost-estimator/">Renovation Cost Estimator</a></li></ul>
+        </section>
+        <section>
+          <h2>Guides</h2>
+          <ul><li><a href="../../guides/how-much-paint-do-i-need/">How Much Paint Do I Need?</a></li><li><a href="../../guides/how-many-tiles-do-i-need/">How Many Tiles Do I Need?</a></li><li><a href="../../guides/cost-to-renovate-a-room/">Cost to Renovate a Room (2026)</a></li><li><a href="../../guides/essential-diy-painting-tools/">Essential DIY Painting Tools</a></li></ul>
+        </section>
+        <section>
+          <h2>CalcReno</h2>
+          <ul><li><a href="../../about/">About</a></li><li><a href="../../contact/">Contact</a></li><li><a href="../../how-we-research/">How We Research</a></li><li><a href="../../privacy-policy/">Privacy Policy</a></li><li><a href="../../disclaimer/">Disclaimer</a></li><li><a href="../../sitemap/">HTML Sitemap</a></li>
+            <li><a href="mailto:javiperezguides@gmail.com">javiperezguides@gmail.com</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="wrap footer-legal">
+        <p>&copy; 2026 CalcReno. Calculator results are estimates for planning only, not professional quotes. Made for U.S. homeowners.</p>
+      </div>
+    </footer>
+    <div class="cookie-banner" data-cookie-banner hidden>
+      <p>We use only essential cookies plus optional analytics and ad measurement. You can accept or reject the non-essential layer.</p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-cookie-action="reject">Reject non-essential</button>
+        <button type="button" class="btn btn--primary" data-cookie-action="accept">Accept</button>
+      </div>
+    </div>
+  </body>
+</html>

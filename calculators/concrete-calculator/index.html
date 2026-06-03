@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Calculator: How Many Bags? | CalcReno</title>
+    <meta name="description" content="Free concrete calculator for slabs. Enter length and width in feet and thickness in inches to estimate cubic yards and how many 40, 60, or 80 lb bags you need.">
+    <link rel="canonical" href="https://calcreno.com/calculators/concrete-calculator/">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
+    <link rel="mask-icon" href="../../assets/icons/favicon.svg" color="#17120b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&display=swap">
+    <link rel="stylesheet" href="../../styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3733223915347669" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Concrete Slab Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (web browser)",
+  "url": "https://calcreno.com/calculators/concrete-calculator/",
+  "description": "Free concrete calculator for slabs. Enter length and width in feet and thickness in inches to estimate cubic yards and how many 40, 60, or 80 lb bags you need.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcReno",
+    "url": "https://calcreno.com"
+  }
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://calcreno.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://calcreno.com/calculators/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Concrete Calculator",
+      "item": "https://calcreno.com/calculators/concrete-calculator/"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many 80 lb bags make a cubic yard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It takes about 45 bags of 80 lb concrete mix to make one cubic yard, 60 bags of 60 lb , or 90 bags of 40 lb . Each 80 lb bag yields roughly 0.6 cubic feet, a 60 lb bag about 0.45 cubic feet, and a 40 lb bag about 0.3 cubic feet. For anything more than about a cubic yard, ready-mix delivery is usually cheaper and far less work than mixing bags."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How thick should my slab be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical patio or walkway is 4 inches thick. Driveways and slabs that carry vehicles are usually 5–6 inches . Always confirm thickness and any rebar or wire mesh requirements with your local building code, since these vary by region and load."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I add extra for waste?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Add about 5–10% extra to your concrete order. Subgrade is never perfectly level, forms flex, and you do not want to stop a pour halfway because you ran short. CalcReno lets you add a waste percentage to the bag count."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I order ready-mix instead of bags?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mixing bags by hand is reasonable up to roughly ½ to 1 cubic yard . Beyond that, the number of bags, water, and labor add up fast. A ready-mix truck delivers consistent concrete and saves hours, though most suppliers have a minimum order and short-load fees."
+      }
+    }
+  ]
+}
+</script>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="CalcReno">
+    <meta property="og:title" content="Concrete Calculator: How Many Bags? | CalcReno">
+    <meta property="og:description" content="Free concrete calculator for slabs. Enter length and width in feet and thickness in inches to estimate cubic yards and how many 40, 60, or 80 lb bags you need.">
+    <meta property="og:url" content="https://calcreno.com/calculators/concrete-calculator/">
+    <meta property="og:image" content="https://calcreno.com/assets/img/hero-home.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Concrete Calculator: How Many Bags? | CalcReno">
+    <meta name="twitter:description" content="Free concrete calculator for slabs. Enter length and width in feet and thickness in inches to estimate cubic yards and how many 40, 60, or 80 lb bags you need.">
+    <meta name="twitter:image" content="https://calcreno.com/assets/img/hero-home.jpg">
+    <meta name="theme-color" content="#17120b">
+    <script src="../../main.js" defer></script>
+    <script src="../../calc.js" defer></script>
+  </head>
+  <body data-page-type="calculator">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="brand" href="../../" aria-label="CalcReno home">
+          <img src="../../assets/icons/logo.svg" alt="" width="34" height="34" aria-hidden="true">
+          <span class="brand__name">Calc<strong>Reno</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="../">Calculators</a>
+          <a href="../paint-calculator/">Paint</a>
+          <a href="../tile-flooring-calculator/">Tile &amp; Flooring</a>
+          <a href="../renovation-cost-estimator/">Renovation Cost</a>
+          <a href="../../guides/">Guides</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Calculators</a></li><li aria-current="page">Concrete Calculator</li></ol></nav></div>
+      
+      <article class="wrap article calc-article">
+        <header class="article__head">
+          <span class="eyebrow">Calculator</span>
+          <h1>Concrete Slab Calculator</h1>
+          <p class="lede">Estimate the cubic yards of concrete for a slab and how many 40, 60, or 80 lb bags it takes — perfect for patios, walkways, shed pads, and footings.</p>
+          <div class="byline">
+          <span class="byline__avatar" aria-hidden="true">CR</span>
+          <p class="byline__text"><strong>CalcReno Editorial Team</strong><br>
+          <small>Reviewed 2026-06-01 · <a href="../../how-we-research/">How we research</a></small></p>
+        </div>
+        </header>
+        <aside class="guide-callout">
+          <span class="guide-callout__icon" aria-hidden="true">📖</span>
+          <div class="guide-callout__text">
+            <strong>Read the full guide:</strong> <a href="../../guides/concrete-cost-guide/">Concrete Cost Guide: Slabs, Patios &amp; Driveways (2026)</a>
+            <span>Bags vs. ready-mix and the prep costs people miss.</span>
+          </div>
+          <a class="btn btn--ghost" href="../../guides/concrete-cost-guide/">Read guide &rarr;</a>
+        </aside>
+        
+        <p>This calculator estimates the <strong>volume of concrete</strong> for a rectangular slab and converts it to <strong>cubic yards</strong> and the number of <strong>40, 60, and 80 lb bags</strong>. Enter the length and width in feet and the thickness in inches. Great for patios, walkways, shed pads, and small footings.</p>
+        <div class="calc-layout">
+        <form class="calc card" data-calc="concrete" id="concrete-form" novalidate data-related-href="../renovation-cost-estimator/" data-related-label="Renovation Cost Estimator" data-guide-href="../../guides/concrete-cost-guide/" data-guide-label="Concrete Cost Guide">
+          <div class="field">
+            <label for="concrete-length">Slab length</label>
+            <div class="field__control">
+              <input type="number" id="concrete-length" name="concrete-length" inputmode="decimal" value="10" min="0.5" step="0.5" required>
+              <span class="field__suffix">ft</span>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="concrete-width">Slab width</label>
+            <div class="field__control">
+              <input type="number" id="concrete-width" name="concrete-width" inputmode="decimal" value="10" min="0.5" step="0.5" required>
+              <span class="field__suffix">ft</span>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="concrete-thickness">Thickness</label>
+            <div class="field__control">
+              <input type="number" id="concrete-thickness" name="concrete-thickness" inputmode="decimal" value="4" min="1" step="0.5" required>
+              <span class="field__suffix">in</span>
+            </div>
+            <p class="field__help">Patios/walkways are usually 4 in; vehicle slabs 5–6 in.</p>
+          </div>
+          <div class="field">
+            <label for="concrete-waste">Waste allowance</label>
+            <div class="field__control">
+              <select id="concrete-waste" name="concrete-waste">
+                <option value="0">0% — exact</option>
+                <option value="5" selected>5% — recommended</option>
+                <option value="10">10% — uneven subgrade</option>
+              </select>
+            </div>
+            
+          </div>
+          <div class="field">
+            <label for="concrete-price">Price per bag (optional)</label>
+            <div class="field__control">
+              <input type="number" id="concrete-price" name="concrete-price" inputmode="decimal" value="6" min="0" step="0.5" required>
+              <span class="field__suffix">$</span>
+            </div>
+            <p class="field__help">Used to estimate bag cost for the 80 lb option.</p>
+          </div>
+          <div class="calc__actions">
+            <button type="submit" class="btn btn--primary btn--block">Calculate</button>
+            <button type="reset" class="btn btn--ghost">Reset</button>
+          </div>
+        </form>
+        <div class="calc-result card" id="concrete-result" data-empty="true" aria-live="polite">
+          <div class="calc-result__placeholder">
+            <p>Enter slab dimensions to see cubic yards and the number of 40, 60, and 80 lb bags.</p>
+          </div>
+        </div>
+      </div>
+        <div class="ad-slot ad-slot--in-article" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+          style="display:block;text-align:center"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3733223915347669"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+        <div class="prose">
+          <h2>How the concrete calculator works</h2>
+          <ol>
+            <li><strong>Convert thickness to feet:</strong> 4 in ÷ 12 = 0.333 ft.</li>
+            <li><strong>Volume in cubic feet</strong> = length × width × thickness. A 10 × 10 ft, 4 in slab = 10 × 10 × 0.333 = <strong>33.3 cu ft</strong>.</li>
+            <li><strong>Cubic yards</strong> = cubic feet ÷ 27 = about <strong>1.23 cu yd</strong>.</li>
+            <li><strong>Bags</strong> = cubic feet ÷ bag yield (0.6 for 80 lb, 0.45 for 60 lb, 0.3 for 40 lb), then add waste and round up.</li>
+          </ol>
+          <h2>Before you pour</h2>
+          <ul>
+            <li><strong>Prepare the base.</strong> A compacted gravel sub-base and proper forms matter as much as the concrete itself.</li>
+            <li><strong>Check local code</strong> for thickness, reinforcement (rebar or wire mesh), and footing depth in freeze-prone areas.</li>
+            <li><strong>Have help ready.</strong> Concrete sets on its own schedule — line up tools and hands before you start mixing.</li>
+            <li><strong>Round up your order.</strong> Running short mid-pour creates a cold joint; a little extra is cheap insurance.</li>
+          </ul>
+          <h2>Two worked examples</h2>
+          <p><strong>Example 1 — a small shed pad.</strong> A 10 × 12 ft pad at 4 inches thick is 10 × 12 × (4 ÷ 12) = 40 cubic feet, or 40 ÷ 27 = about 1.5 cubic yards. At roughly 0.6 cubic feet per 80 lb bag, that is 40 ÷ 0.6 = 67 bags before waste — already past the point where a ready-mix delivery is easier and usually cheaper.</p>
+          <p><strong>Example 2 — a small walkway.</strong> A 3 × 20 ft walkway at 4 inches is 3 × 20 × 0.333 = 20 cubic feet, about 0.74 cubic yards. That is 20 ÷ 0.6 = 34 bags of 80 lb, or 20 ÷ 0.45 = 45 bags of 60 lb. Add 5–10% so an uneven subgrade does not leave you short, and you can reasonably mix this by hand over a session.</p>
+          <h2>Cost and planning factors</h2>
+          <p>The concrete itself is only part of the spend. A durable slab needs excavation, a compacted gravel sub-base for drainage, forms to hold the shape, and often rebar or wire mesh for strength — steps that are easy to leave out of a quick budget but not optional for a slab that lasts. In freeze-prone regions, footings must reach below the frost line, and thicker, reinforced slabs are required wherever vehicles will park. The finish matters too: a basic broom finish is economical, while stamped, colored, or polished concrete costs more. For the full bags-versus-ready-mix breakdown and the prep costs people miss, see our <a href="/guides/concrete-cost-guide/">concrete cost guide</a>.</p>
+        </div>
+        <section class="prose calc-extra">
+          <h2>Concrete costs in 2026</h2>
+          <p>The concrete itself is only part of the bill — the base and finishing work drive much of the cost.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Cost item</th><th>Why it matters</th></tr></thead>
+              <tbody><tr><td>Concrete (bags or ready-mix)</td><td>Bags for small jobs; ready-mix past ~1 cu yd</td></tr><tr><td>Gravel sub-base</td><td>Drainage and a stable, crack-resistant base</td></tr><tr><td>Forms &amp; reinforcement</td><td>Rebar or wire mesh, often required by code</td></tr><tr><td>Excavation &amp; grading</td><td>More for slopes or hard-to-reach areas</td></tr><tr><td>Finish</td><td>Broom finish (basic) → stamped/colored (premium)</td></tr></tbody>
+            </table>
+          </div>
+          <p class="note">Concrete and labor prices vary by region, finish, and site conditions — planning factors, not a quote.</p>
+        </section>
+        <section class="prose calc-extra">
+          <h2>Common mistakes to avoid</h2>
+          <ul class="mistakes"><li>Skimping on the compacted gravel base — the top cause of cracking.</li><li>Under-ordering; running short creates a weak cold joint mid-pour.</li><li>Ignoring local code on thickness, rebar, and frost-line footings.</li><li>Hand-mixing far more than ~1 cubic yard instead of ordering ready-mix.</li><li>Pouring without enough help — concrete sets on its own schedule.</li></ul>
+        </section>
+        <section class="related">
+          <h2>Keep going</h2>
+          <div class="related__links">
+            <a href="../../guides/concrete-cost-guide/">Concrete Cost Guide: Slabs, Patios &amp; Driveways (2026) &rarr;</a>
+            <a href="../renovation-cost-estimator/">Renovation Cost Estimator &rarr;</a>
+          </div>
+        </section>
+      </article>
+      <section class="faq panel" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>How many 80 lb bags make a cubic yard?</summary>
+            <div class="faq__answer"><p>It takes about <strong>45 bags of 80 lb</strong> concrete mix to make one cubic yard, <strong>60 bags of 60 lb</strong>, or <strong>90 bags of 40 lb</strong>. Each 80 lb bag yields roughly 0.6 cubic feet, a 60 lb bag about 0.45 cubic feet, and a 40 lb bag about 0.3 cubic feet. For anything more than about a cubic yard, ready-mix delivery is usually cheaper and far less work than mixing bags.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>How thick should my slab be?</summary>
+            <div class="faq__answer"><p>A typical patio or walkway is <strong>4 inches</strong> thick. Driveways and slabs that carry vehicles are usually <strong>5–6 inches</strong>. Always confirm thickness and any rebar or wire mesh requirements with your local building code, since these vary by region and load.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Should I add extra for waste?</summary>
+            <div class="faq__answer"><p>Yes. Add about <strong>5–10% extra</strong> to your concrete order. Subgrade is never perfectly level, forms flex, and you do not want to stop a pour halfway because you ran short. CalcReno lets you add a waste percentage to the bag count.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>When should I order ready-mix instead of bags?</summary>
+            <div class="faq__answer"><p>Mixing bags by hand is reasonable up to roughly <strong>½ to 1 cubic yard</strong>. Beyond that, the number of bags, water, and labor add up fast. A ready-mix truck delivers consistent concrete and saves hours, though most suppliers have a minimum order and short-load fees.</p></div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <section class="footer-about">
+          <a class="brand brand--footer" href="../../">
+            <img src="../../assets/icons/logo.svg" alt="" width="30" height="30" aria-hidden="true">
+            <span class="brand__name">Calc<strong>Reno</strong></span>
+          </a>
+          <p>CalcReno gives U.S. homeowners free, easy-to-use calculators for paint, tile, flooring, concrete, wallpaper, and full room renovation costs — all in feet, inches, gallons, and dollars.</p>
+          <p class="footer-disclaimer">CalcReno publishes free calculators and educational content for informational purposes only. All results are estimates to help you plan a project; they are not professional quotes. Always confirm quantities and costs with a licensed contractor or supplier before buying materials.</p>
+        </section>
+        <section>
+          <h2>Calculators</h2>
+          <ul><li><a href="../paint-calculator/">Paint Calculator</a></li><li><a href="../tile-flooring-calculator/">Tile &amp; Flooring Calculator</a></li><li><a href="./">Concrete Calculator</a></li><li><a href="../wallpaper-calculator/">Wallpaper Calculator</a></li><li><a href="../renovation-cost-estimator/">Renovation Cost Estimator</a></li></ul>
+        </section>
+        <section>
+          <h2>Guides</h2>
+          <ul><li><a href="../../guides/how-much-paint-do-i-need/">How Much Paint Do I Need?</a></li><li><a href="../../guides/how-many-tiles-do-i-need/">How Many Tiles Do I Need?</a></li><li><a href="../../guides/cost-to-renovate-a-room/">Cost to Renovate a Room (2026)</a></li><li><a href="../../guides/essential-diy-painting-tools/">Essential DIY Painting Tools</a></li></ul>
+        </section>
+        <section>
+          <h2>CalcReno</h2>
+          <ul><li><a href="../../about/">About</a></li><li><a href="../../contact/">Contact</a></li><li><a href="../../how-we-research/">How We Research</a></li><li><a href="../../privacy-policy/">Privacy Policy</a></li><li><a href="../../disclaimer/">Disclaimer</a></li><li><a href="../../sitemap/">HTML Sitemap</a></li>
+            <li><a href="mailto:javiperezguides@gmail.com">javiperezguides@gmail.com</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="wrap footer-legal">
+        <p>&copy; 2026 CalcReno. Calculator results are estimates for planning only, not professional quotes. Made for U.S. homeowners.</p>
+      </div>
+    </footer>
+    <div class="cookie-banner" data-cookie-banner hidden>
+      <p>We use only essential cookies plus optional analytics and ad measurement. You can accept or reject the non-essential layer.</p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-cookie-action="reject">Reject non-essential</button>
+        <button type="button" class="btn btn--primary" data-cookie-action="accept">Accept</button>
+      </div>
+    </div>
+  </body>
+</html>
